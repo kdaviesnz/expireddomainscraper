@@ -1,0 +1,15 @@
+To get expired domains from database:
+http://{path}/api/godaddy/ GET
+Params: daysLeft
+
+To load expired domains from GoDaddy into the database:
+http://{path}/api/godaddy/ POST
+Params: type
+Type parameter must be one of auction_end_today, tnam_all_listings, tnam_all_listings2,
+tnam_all_listings3, bidding_service_auctions, traffic, traffic200, auction_end_tomorrow,
+5_letter_auctions
+
+To get stats for a domain (not cached in database):
+http://{path}/api/stats/ POST
+Params: url
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expired Domain Scraper</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid">
+
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <header role="banner">
+
+                <section class="">
+                    <h1 class="pull-left">Expired Domain Scraper <button class="btn btn-primary btn-large edsFetchLatest">Fetch latest</button> <button class="btn btn-primary btn-large edsGetPrevious" disabled="true">Previous</button> <button class="btn btn-primary btn-large edsGetNext">Next</button></h1>
+                </section>
+
+                <div id="progress"></div>
+
+            </header>
+
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+
+
+            <main role="main">
+
+
+                <div id="expiredDomainTableContainer"></div>
+
+            </main>
+
+         </div>
+
+     </div><!-- row -->
+
+</div><!-- container-fluid -->
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/gsdom.js"></script>
+<script src="js/expireddomainscraper.seques.js"></script>
+<script src="js/expireddomainscraper.store.js"></script>
+<script src="js/expireddomainscraper.view.js"></script>
+<script src="js/expireddomainscraper.controller.js"></script>
+
+</body>
+</html>

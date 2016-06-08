@@ -1,0 +1,37 @@
+All tests done using Postman: https://www.getpostman.com
+
+See api/apidoc.txt
+
+
+http://premiumwebtechnologies.com/projects/expireddomainscraper/api/godaddy/ GET
+Params: daysLeft
+Expected result: Domain records matching the number of day left, in JSON format.
+
+
+
+http://premiumwebtechnologies.com/projects/expireddomainscraper/api/godaddy/ POST
+Params: type
+Type parameter must be one of auction_end_today, tdnam_all_listings, tdnam_all_listings2,
+tdnam_all_listings3, bidding_service_auctions, traffic, traffic200, auction_end_tomorrow or
+5_letter_auctions
+
+Tested for 5_letter_auctions, tdnam_all_listings, tdnam_all_listings2, tdnam_all_listings3, bidding_service_auctions, traffic, traffic200, and  auction_end_tomorrow.
+
+
+http://premiumwebtechnologies.com/projects/expireddomainscraper/api/stats/ POST
+Params: 
+url eg "example.com"
+prefix (optional, eg http, https)
+
+Expected result (example):
+{
+  "pageRank": 0,
+  "siteIndexTotal": 0,
+  "searchResultsTotal": 0,
+  "backlinksTotal": 0
+}
+
+Note: This will save results to the database
+
+
+

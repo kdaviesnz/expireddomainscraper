@@ -1,0 +1,21 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "6.2.0",
+    "slim/pdo": "1.9.8",
+    "touki/ftp": "v1.2.0",
+    "vipsoft/unzip": "1.2.1",
+    "jms/serializer": "1.1.0",
+    "sabre/xml": "1.4.2",
+    "seostats/seostats": "2.5.2"
+  }
+}
